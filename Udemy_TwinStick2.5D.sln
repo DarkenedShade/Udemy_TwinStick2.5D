@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_TwinStick2.5D.CSharp.Plugins", "Udemy_TwinStick2.5D.CSharp.Plugins.csproj", "{4214CD43-390F-33F8-CCDA-635B3982BF23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_TwinStick2.5D.CSharp", "Udemy_TwinStick2.5D.CSharp.csproj", "{8D4A7254-82B0-D2EC-9C67-83E3B230A27B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy_TwinStick2.5D.CSharp.Editor", "Udemy_TwinStick2.5D.CSharp.Editor.csproj", "{A61ECB31-000E-0329-5962-BFD701CED5A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4214CD43-390F-33F8-CCDA-635B3982BF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4214CD43-390F-33F8-CCDA-635B3982BF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4214CD43-390F-33F8-CCDA-635B3982BF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4214CD43-390F-33F8-CCDA-635B3982BF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4A7254-82B0-D2EC-9C67-83E3B230A27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4A7254-82B0-D2EC-9C67-83E3B230A27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4A7254-82B0-D2EC-9C67-83E3B230A27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4A7254-82B0-D2EC-9C67-83E3B230A27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61ECB31-000E-0329-5962-BFD701CED5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61ECB31-000E-0329-5962-BFD701CED5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61ECB31-000E-0329-5962-BFD701CED5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61ECB31-000E-0329-5962-BFD701CED5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
