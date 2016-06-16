@@ -22,7 +22,7 @@ public class SinbadScripts : MonoBehaviour {
         l_sword = LeftSword.GetComponent<SkinnedMeshRenderer>();
         r_sword = RightSword.GetComponent<SkinnedMeshRenderer>();
 
-        rigidBody.constraints = rigidBody.constraints | RigidbodyConstraints.FreezePositionX;
+        //rigidBody.constraints = rigidBody.constraints | RigidbodyConstraints.FreezePositionX;
     }
 
 	public void AttachSwordsToHandle()
