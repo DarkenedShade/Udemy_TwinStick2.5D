@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour
         offsetFromTarget =  transform.position - target.transform.position;
     }
 
+    
     void Update()
     {
         float rH = CrossPlatformInputManager.GetAxis("R_Horizontal");
@@ -30,9 +31,9 @@ public class CameraController : MonoBehaviour
             {
                 //This method goes directly up and down but causes camera jitter when looking directly 
                 //up or down at the target, this happens due to the camera up flipping sides
-                Vector3 projectedOffsetOnGround = Vector3.ProjectOnPlane(offsetFromTarget, Vector3.up); //flaten offset to ground
-                Vector3 rotatedForwardVector = Quaternion.AngleAxis(90.0f, Vector3.up) * projectedOffsetOnGround.normalized; //rotate to get perpendicular vector
-                offsetFromTarget = Quaternion.AngleAxis(Time.deltaTime * panSpeed * rV, rotatedForwardVector) * offsetFromTarget;
+                //Vector3 projectedOffsetOnGround = Vector3.ProjectOnPlane(offsetFromTarget, Vector3.up); //flaten offset to ground
+                //Vector3 rotatedForwardVector = Quaternion.AngleAxis(90.0f, Vector3.up) * projectedOffsetOnGround.normalized; //rotate to get perpendicular vector
+                offsetFromTarget = Quaternion.AngleAxis(Time.deltaTime * panSpeed * rV, transform.right) * offsetFromTarget;
                 //uncomment to see projected and perpendicular vectors
                 //Debug.DrawRay(target.transform.position, projectedOffsetOnGround, Color.blue);
                 //Debug.DrawRay(target.transform.position, rotatedForwardVector, Color.cyan);
@@ -45,4 +46,19 @@ public class CameraController : MonoBehaviour
         transform.position = target.transform.position + offsetFromTarget;
         transform.LookAt(target.transform);
     }
+    
+    //private void LateUpdate()
+    //{
+    //    float horizChange = CrossPlatformInputManager.GetAxis("R_Horizontal");
+    //    float vertChange = CrossPlatformInputManager.GetAxis("R_Vertical");
+
+    //    transform.position = target.transform.position + offsetFromTarget;
+
+    //    //rotate along the Z-axis by amount vertChange, centered around the point the player is at
+    //    transform.RotateAround(target.transform.position, Vector3.forward, vertChange);
+    //    //rotate along the Y-axis by amount horizChange, centered around the point the player is at
+    //    transform.RotateAround(target.transform.position, Vector3.up, horizChange);
+    //    offsetFromTarget = transform.position - target.transform.position;
+    //    transform.LookAt(target.transform);
+    //}
 }
