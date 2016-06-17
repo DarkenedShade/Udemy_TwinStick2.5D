@@ -81,6 +81,20 @@
     <Compile Include="Assets\PlayerPrefsManager.cs" />
     <Compile Include="Assets\ReplaySystem.cs" />
     <Compile Include="Assets\SinBad-Oger\SinbadScripts.cs" />
+    <Compile Include="Assets\kode80\Clouds\Examples\Demo\Scripts\FlyCamera.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\BehaviorStateStore.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\CrepuscularRays.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\EditorState.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\FullScreenQuad.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\RenderSettings.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\SharedProperties.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\TexturePainter.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\TimeOfDay.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\TimeOfDayKeyFrame.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\kode80CloudShadows.cs" />
+    <Compile Include="Assets\kode80\Clouds\Scripts\kode80Clouds.cs" />
+    <Compile Include="Assets\kode80\Effects\Scripts\FilmicTonemapping.cs" />
+    <Compile Include="Assets\kode80\UnityTools\EditorTools\Scripts\RecordVideo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
@@ -93,6 +107,18 @@
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\kode80\Clouds\AssetVersion.xml" />
+    <None Include="Assets\kode80\Clouds\ChangeLog.txt" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\CloudBlender.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\CloudBlenderEditor.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\CloudCombiner.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\CloudShadowPass.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\CloudsCrepuscularRays.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\TextureBrush.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\VolumeClouds.shader" />
+    <None Include="Assets\kode80\Clouds\Resources\kode80Clouds\VolumeCloudsCommon.cginc" />
+    <None Include="Assets\kode80\Effects\Resources\FilmicTonemapping.shader" />
+    <None Include="Assets\kode80\UnityTools\AssetVersion.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
